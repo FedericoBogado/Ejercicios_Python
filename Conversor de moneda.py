@@ -10,25 +10,32 @@ def conversor_a_pesos(valor_dolar):
     pesos = round(pesos, 2)
     print("\nEquivalen a:", pesos, "pesos\n")
 
-opc = input("Elija una opcion: \n   [1] De pesos argentinos a dolares \n   [2] De pesos colombianos a dolares \n   [3] De pesos mexicanos a dolares \n   [4] De dolares a pesos argentinos \n   [5] De dolares a pesos colombianos \n   [6] De dolares a pesos mexicanos \n\n   ")
 
-if opc == "1":
-        conversor_a_dolar("argentinos", 290)
+def menu():
+        opc = input("Elija una opcion: \n   [1] De pesos argentinos a dolares \n   [2] De pesos colombianos a dolares \n   [3] De pesos mexicanos a dolares \n   [4] De dolares a pesos argentinos \n   [5] De dolares a pesos colombianos \n   [6] De dolares a pesos mexicanos \n\n   ")
 
-elif opc == "2":
-        conversor_a_dolar("colombianos", 3875)
+        if opc == "1":
+                conversor_a_dolar("argentinos", 290)
 
-elif opc == "3":
-        conversor_a_dolar("mexicanos", 24)
+        elif opc == "2":
+                conversor_a_dolar("colombianos", 3875)
 
-elif opc == "4":
-        conversor_a_pesos(290)
+        elif opc == "3":
+                conversor_a_dolar("mexicanos", 24)
 
-elif opc == "5":
-        conversor_a_pesos(3875)
+        elif opc == "4":
+                conversor_a_pesos(290)
 
-elif opc == "6":
-        conversor_a_pesos(24)
+        elif opc == "5":
+                conversor_a_pesos(3875)
 
-else:
-        print("********ERROR********")
+        elif opc == "6":
+                conversor_a_pesos(24)
+
+        else:
+                print("********ERROR********")
+                menu()
+
+
+if __name__ == "__main__":
+        menu()

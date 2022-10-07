@@ -3,7 +3,7 @@ import os
 
 
 def run():
-    downloads_folder = "C:/Users/dakra/Downloads/"
+    downloads_folder = "C:/Users/dakra/BrawlhallaRenders/"
 
     for filename in os.listdir(downloads_folder):
         name, extension = os.path.splitext(downloads_folder + filename)
