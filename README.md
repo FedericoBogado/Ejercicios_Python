@@ -4,7 +4,7 @@ Estos son algunos ejercicios que he hecho en mi recorrido aprendiendo este lengu
 
 Son bastante basicos, pero queria documentar como iba cambiando mi forma de estructurar el codigo y mi forma de pensar la logica de cada ejercicio.
 
-# Estado
+## Estado
 
 Todos los codigos son funcionales.
 
